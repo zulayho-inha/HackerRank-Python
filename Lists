@@ -1,0 +1,49 @@
+PROBLEM:
+Consider a list (list = []). You can perform the following commands:
+
+    insert i e: Insert integer e at position i.
+    print: Print the list.
+    remove e: Delete the first occurrence of integer e.
+    append e: Insert integer e at the end of the list.
+    sort: Sort the list.
+    pop: Pop the last element from the list.
+    reverse: Reverse the list.
+
+Initialize your list and read in the value of followed by lines of commands where each command will be of the types listed above. 
+Iterate through each command in order and perform the corresponding operation on your list. 
+
+SOLUTION:
+if __name__ == '__main__':
+    N = int(input())
+    ml = []
+    # ml.insert(0,5)
+    # ml.insert(1,10)
+    # ml.insert(0,6)
+    # print(ml)
+    # ml.remove(6)
+    # ml.append(9)
+    # ml.append(1)
+    # ml.sort()
+    # print(ml)
+    # ml.pop()
+    # ml.reverse()
+    # print(ml)
+    for command in range(N):
+        u_input = input().split()
+        
+        if u_input[0] == 'insert':
+            ml.insert(int(u_input[1]),int(u_input[2]))
+        elif u_input[0] == 'print':
+            print(ml)
+        elif u_input[0] == 'remove':
+            ml.remove(int(u_input[1]))
+        elif u_input[0] == 'append':
+            ml.append(int(u_input[1]))
+        elif u_input[0] == 'sort':
+            ml.sort()
+        elif u_input[0] == 'pop':
+            ml.pop()
+        elif u_input[0] == 'reverse':
+            ml.reverse()
+        else:
+            pass        
