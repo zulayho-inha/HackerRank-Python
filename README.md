@@ -12,3 +12,6 @@ how to show 2 places after decimal f"{result:.2f}"?
 
 Day3: 12)Lists
 challenges: syntax + logic of each command(pov:be carefull with indexes)
+
+13)Tuple
+challenges: different version of Python is likely to provide the different output;there is nothing wrong;hashing!
